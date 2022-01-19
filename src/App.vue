@@ -1,19 +1,17 @@
 <script lang="ts" setup>
-import Index from "./pages/index.vue";
 import Header from "./components/Header.vue";
 import "./assets/index.css";
 
 </script>
 
 <template>
-<Header/>
-<router-view></router-view>
+  <Header/>
+  <router-view></router-view>
 </template>
 
 
 <script lang="ts">
 import { defineComponent } from 'vue'
-import axios from 'axios'
 export default defineComponent({
   name: "App",
   data() {

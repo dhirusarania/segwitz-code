@@ -193,8 +193,6 @@
 <script lang="ts">
 import { defineComponent } from 'vue'
 import { useCookies } from "vue3-cookies";
-
-import axios from 'axios'
 export default defineComponent({
   setup() {
     const { cookies } = useCookies();
