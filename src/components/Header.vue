@@ -36,12 +36,7 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue'
-import { useCookies } from "vue3-cookies";
 export default defineComponent({
-  setup() {
-    const { cookies } = useCookies();
-    return { cookies };
-  },
   name: "Header",
   data() {
     return {
@@ -58,14 +53,6 @@ export default defineComponent({
       }
   },
   methods:{
-     parseJwt (token) {
-        var base64Url = token.split('.')[1];
-        var base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/');
-        var jsonPayload = decodeURIComponent(atob(base64).split('').map(function(c) {
-            return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
-        }).join(''));
-        return JSON.parse(jsonPayload);
-    },
     logout: function(){
       this.cookies.remove('user-auth')
       this.$router.push('/')

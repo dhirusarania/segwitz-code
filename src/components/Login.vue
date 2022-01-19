@@ -20,12 +20,6 @@
             <p>Login Successful. Redirecting..</p>
           </div>
           <form v-on:submit.prevent="login">
-            <input
-              type="hidden"
-              name="_token"
-              value="eXhL4xl74nkM68RuFn26zdcLjSf4vz3FDyiuBSxH"
-            />
-            <input type="hidden" name="remember" value="true" />
             <div class="rounded-md shadow-sm">
               <div>
                 <input
@@ -137,12 +131,6 @@
                     d="M12.454 16.697L9.75 13.992a4 4 0 01-3.742-3.741L2.335 6.578A9.98 9.98 0 00.458 10c1.274 4.057 5.065 7 9.542 7 .847 0 1.669-.105 2.454-.303z"
                   ></path>
                 </svg>
-                <!-- <div class="absolute inset-y-0 right-0 pr-3 flex items-center text-sm leading-5">
-                <a
-                  href="https://tailwindui.com/password/reset"
-                  class="text-gray-900 underline"
-                >Forgot?</a>
-              </div> -->
               </div>
             </div>
 
