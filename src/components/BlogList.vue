@@ -1,7 +1,7 @@
 <template>
   <div class="pt-20 container px-6" v-if="data_loaded">
     <div v-if="blogs.length == 0" class="text-center">
-      <img src="empty.gif" class="mx-auto w-[500px]">
+      <img src="/empty.gif" class="mx-auto w-[500px]">
       <h1 class="text-2xl font-bold">Oh no!! No post added</h1>
       <p>Write something awesome</p>
       <RouterLink to="write-blog" class="bg-blue-500 inline-block text-white font-bold mt-5 px-6 py-3 rounded-md cursor-pointer">Write</RouterLink>
